@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.mapper.FastenlocMapper">
+
+    <insert id="insert" parameterType="com.example.demo.entity.Fastenloc">
+        INSERT INTO gwas2gene.fastenloc
+        VALUES (
+                   #{jobid, jdbcType=VARCHAR},
+                   #{prefix, jdbcType=VARCHAR}
+               )
+    </insert>
+
+    <select id="selectByJobid" parameterType="java.lang.String" resultType="com.example.demo.entity.Fastenloc">
+        SELECT * FROM gwas2gene.fastenloc
+        WHERE jobid = #{Jobid};
+    </select>
+
+    <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.Fastenloc">
+        UPDATE gwas2gene.fastenloc
+        SET PREFIX = #{prefix, jdbcType=VARCHAR}
+        WHERE jobid = #{jobid};
+    </update>
+</mapper>

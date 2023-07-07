@@ -1,0 +1,34 @@
+{
+  "name": "g2g-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:test": "vite build --mode testing"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "axios": "^1.2.2",
+    "echarts": "^5.4.2",
+    "element-plus": "^2.2.27",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.45",
+    "vue-pdf-embed": "^1.1.6",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "unplugin-auto-import": "^0.12.1",
+    "unplugin-element-plus": "^0.4.1",
+    "unplugin-vue-components": "^0.22.12",
+    "vite": "^4.0.0",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}

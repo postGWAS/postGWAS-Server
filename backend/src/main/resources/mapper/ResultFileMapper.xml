@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.mapper.ResultFileMapper">
+
+    <insert id="insert" parameterType="com.example.demo.entity.ResultFile">
+        INSERT INTO gwas2gene.resultfile
+        VALUES (
+                   #{fileid, jdbcType=VARCHAR},
+                   #{jobid, jdbcType=VARCHAR},
+                   #{filename, jdbcType=VARCHAR},
+                   #{path, jdbcType=VARCHAR}
+               )
+    </insert>
+
+    <select id="selectByID" parameterType="java.lang.String" resultType="com.example.demo.entity.ResultFile">
+        SELECT * FROM gwas2gene.resultfile
+        WHERE fileid = #{fileid};
+    </select>
+
+    <select id="selectAll" resultType="com.example.demo.entity.ResultFile">
+        SELECT * FROM gwas2gene.resultfile;
+    </select>
+
+</mapper>
