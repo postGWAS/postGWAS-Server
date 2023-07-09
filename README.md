@@ -1,6 +1,6 @@
 # postGWAS-Server
 
-This webpage makes it very easy for the user to carry out the postGWAS analysis without the need to download the appropriate software and configuring the relevant environment. 
+This web server makes it very easy for the users to carry out the postGWAS analysis without the need to download the appropriate software and configuring the relevant environment. In summary, nine methods can be used to calculate causal genes or causal variants, including FUSION, CAVIAR, CAVIARBF, PAINTOR, FINEMAP, eCAVIAR, coloc, fastENLOC, and S-PrediXcan.
 
 # Frontend
 
