@@ -1,0 +1,4 @@
+# Analysis pipeline
+In general, nine methods are provided in this , including FUSION, CAVIAR, CAVIARBF, PAINTOR, FINEMAP, eCAVIAR, coloc, fastENLOC, and S-PrediXcan.
+To run these analysis, you should download the relevant software package first.
+
