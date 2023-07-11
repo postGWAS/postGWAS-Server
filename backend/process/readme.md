@@ -11,6 +11,8 @@ To run these analysis, you should download the relevant software package first.
 + fastENLOC <https://github.com/xqwen/fastenloc/tree/master/tutorial>
 + FUSION <http://gusevlab.org/projects/fusion/>
 + S-PrediXcan <https://github.com/hakyimlab/MetaXcan>
+# Prerequisites
+R3.6.1
 # Usage
 ```
 Rscript finemap.R [OPTIONS]
