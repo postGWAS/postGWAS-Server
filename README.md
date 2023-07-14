@@ -25,7 +25,6 @@ To run a post-GWAS Server frontend perform the following steps:
     npm run preview     # run the server
    ```
    
-## Run an analysis from a running website:
 
 # Backend
 
